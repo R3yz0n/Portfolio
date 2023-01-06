@@ -4,8 +4,9 @@ const About = () => {
         pursuing Bachelors  in Computer Application  (BCA), currently in my second-year.
         <br /><br />
         I love building stuffs on web and have always been passionate about building something cool on my own.
-        Furthermore, I have been working as a Web Developer for more than 2.5yrs in both commercial and personal
-        projects. By the way, I am always open for work, you can hit me up in the links below. Have a great day !</>
+        Furthermore, I have been working as a Web Developer for more than 1.5yrs . I've done many  personal
+        projects and I'm in the journey of MERN Stack. By the way, I am always open for work, you can hit me up in the links down
+        below. Have a great day !</>
 
     return (
         <div name='about' className="w-full min-h-[80vh] text-white bg-gradient-to-b from-gray-800 to-gray-800 m-auto py-0 overflow-hidden ">

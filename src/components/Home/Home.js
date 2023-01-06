@@ -9,7 +9,7 @@ import { Link } from 'react-scroll';
 import SocialLinks from '../SocialLinks/SocialLinks';
 
 const Home = (props) => {
-    const myDescription = `I have 8 years of experience building and designing UI/UX Application.
+    const myDescription = `I have 2 years of experience building and designing UI/UX Application.
     Currently , I love to work on web application using technologies like
     React, Tailwind, Figma, JS and Git.`
 
