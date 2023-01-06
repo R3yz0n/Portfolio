@@ -6,6 +6,11 @@
 
 html {
     overflow-x: hidden;
+
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 @layer base {
