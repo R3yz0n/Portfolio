@@ -5,13 +5,13 @@ const SocialLinksData = [
     {
         id: 1,
         child: <>LinkedIn <FaLinkedin size={25} /></>,
-        href: 'https://inkedin.com',
+        href: 'https://www.linkedin.com/in/sagar-thapa-chhetri-630165261/',
         style: 'rounded-tr-md'
     },
     {
         id: 2,
         child: <>Github <FaGithub size={25} /></>,
-        href: 'https://linkedin.com',
+        href: 'https://github.com/R3yz0n',
     },
     {
         id: 3,

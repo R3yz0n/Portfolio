@@ -1,32 +1,32 @@
 import React from 'react'
+import ContactText from './ContactText'
+import FormImg from '../../assets/form-control.png'
+import Form from './Form'
+import ContactIcons from './ContactIcons'
 
 const Contact = () => {
     return (
-        <div name='contact' className='w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white'>
-
-            <div>
-                <div>
-                    <p>Contact Me</p>
-                    <p>Submit the form beolow to get in touch</p>
-                </div>
-
-                <div>
-
-                    <form action="">
-
-                        <input type="text" name="name" placeholder='Enter your name' className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none' />
-
-                        <input type="text" name="name" placeholder='Enter your name' className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none' />
-
-                        <textarea name="message" cols="30" rows="10" className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none'></textarea>
-                        <button className='text-white bg-gradient-to-b from=cyan-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-75'>Let's Talk</button>
-                    </form>
-                </div>
-
-            </div>
+        <main className='bg-gradient-to-b from-black to-gray-900 w-full py-20 relative '>
 
 
-        </div>
+            <section name='contact' className='w-full md:h-screen  py-1 text-white px-4 md:px-4'>
+
+                <ContactText />
+
+                <main className='flex max-w-[800px] mx-auto py-6 md:py-3 md:min-h-[80%] gap-10 border-gray-900 shadow-md shadow-gray-800 border-t-2 rounded-md mt-6 '>
+
+                    <div className=' hidden md:flex m-auto w-[40%] '>
+                        <img src={FormImg} alt="ERR" className='w-80' data-aos='zoom-in-right' />
+                    </div>
+
+                    <Form />
+
+                </main>
+
+            </section>
+
+            <ContactIcons />
+        </main>
     )
 }
 

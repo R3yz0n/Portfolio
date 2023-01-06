@@ -15,7 +15,7 @@ const Portfolio = () => {
                     {
                         portfolios.map(({ id, src, aos }) =>
 
-                            <div data-aos={aos} data-aos-duration="1200" className='shadow-md shadow-gray-600 rounded-xl w-[80%] sm:w-auto mx-auto overflow-hidden'>
+                            <div key={id} data-aos={aos} data-aos-duration="1200" className='shadow-md shadow-gray-600 rounded-xl w-[80%] sm:w-auto mx-auto overflow-hidden'>
                                 <img src={src} alt="ERR" className='rounded-md duration-500 hover:scale-110' />
 
                                 <div className='flex item-center justify-center text-xl md:text-2xl font-josefin-sans'>

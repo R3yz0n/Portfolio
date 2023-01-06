@@ -9,38 +9,49 @@ import About from "./components/About/About";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Experience from "./components/Experience/Experience";
 import Contact from "./components/Contact/Contact";
+import ContextProvider from "./Store/ContextProvider";
+import Footer from "./components/Footer";
 
 function App() {
   const [toLoad, setToLoad] = useState(false);
 
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 1000, easing: "ease", once: 'true' });
     setToLoad(true);
     setTimeout(() => {
       setToLoad(false);
 
-    }, 800);
+    }, 3600);
 
   }, [])
+
+
+
+
 
   return (
     <>
 
 
-      {false ?
+      {toLoad ?
         <Loader /> :
         <>
-          <Navbar />
-          <Home />
+          <ContextProvider>
+            <Navbar />
+            <Home />
+          </ContextProvider>
           <SocialLinks />
           <About />
           <Portfolio />
           <Experience />
           <Contact />
+          <Footer />
         </>
 
 
       }
+
+
 
     </>
   );
