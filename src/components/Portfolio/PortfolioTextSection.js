@@ -9,7 +9,7 @@ const PortfolioTextSection = () => {
                 <img src={Arrow} className='w-10 md:w-12 rotate-90 mx-2' alt="ERR" />
             </p>
 
-            <p className='py-6 text-[1.1rem] md:text-[1.4rem] font-josefin-sans' >Checkout some of my work right here .</p>
+            <p className='py-6 text-[1.1rem] md:text-[1.4rem] font-josefin-sans' id='portfolio' >Checkout some of my work right here .</p>
         </div>
     )
 }

@@ -11,8 +11,8 @@ const Navbar = () => {
 
 
 
-    const links = [{ name: 'home', time: 300 }, { name: 'about', time: 700 }, { name: 'portfolio', time: 700 },
-    { name: 'experience', time: 700 }, { name: 'contact', time: 700 }];
+    const links = [{ name: 'home', time: 300 }, { name: 'about', time: 500 }, { name: 'portfolio', time: 500 },
+    { name: 'experience', time: 500 }, { name: 'contact', time: 500 }];
 
 
     const linksRow = links.map((link, index) => <li data-aos="fade-down" className='px-6 cursor-pointer capitalize font-medium text-white

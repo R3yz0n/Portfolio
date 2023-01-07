@@ -9,7 +9,7 @@ const Contact = () => {
         <main className='bg-gradient-to-b from-black to-gray-900 w-full py-20 overflow-x-hidden relative'>
 
 
-            <section name='contact' className='w-full md:h-screen  py-1 text-white px-4 md:px-4'>
+            <section className='w-full md:h-screen  py-1 text-white px-4 md:px-4'>
 
                 <ContactText />
 

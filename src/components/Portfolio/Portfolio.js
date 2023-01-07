@@ -6,12 +6,12 @@ const Portfolio = () => {
 
     return (
 
-        <div name='portfolio' className='bg-gradient-to-t from-[rgb(27,33,41)] to-gray-800 w-full text-white min-h-screen pb-4'>
+        <div className='bg-gradient-to-t from-[rgb(27,33,41)] to-gray-800 w-full text-white min-h-screen pb-4' >
 
             <div className='max-w-[1080px] 2xl: p-4 mx-auto flex flex-col justify-center w-full h-full overflow-hidden'>
                 <PortfolioTextSection />
 
-                <div id='portfolio' className='grid sm:grid-cols-2  md:grid-cols-3 gap-6 md:gap-10  sm:px-0'>
+                <div className='grid sm:grid-cols-2  md:grid-cols-3 gap-6 md:gap-10  sm:px-0'>
                     {
                         portfolios.map(({ id, src, aos }) =>
 
