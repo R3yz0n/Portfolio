@@ -69,7 +69,7 @@ const Form = () => {
 
                 <div className='flex'>
 
-                    <button value="Send" type='submit' className='text-white bg-[rgb(28,69,175)]  px-8 py-2 rounded-sm duration-300 hover:bg-transparent border-[2px] border-[rgb(28,69,175)] mt-8' data-aos="zoom-out">Let's Talk</button>
+                    <button value="Send" type='submit' className='text-white bg-[rgb(28,69,175)]  px-8 py-2 rounded-sm duration-500 hover:bg-transparent border-[2px] border-[rgb(28,69,175)] mt-8' >Let's Talk</button>
 
                     {error &&
                         <p className='py-1 pl-4 opacity-70 text-[15px] text-red-500'>Please fill all the details. </p>
