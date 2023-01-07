@@ -5,21 +5,21 @@ const ContactIcons = () => {
 
     const contactIconsInfo = [
         {
-            icon: <FaFacebook size={30} style={{ color: 'white', }} />,
+            icon: <FaFacebook size={30} style={{ color: 'white', }} className='hover:text-[#4056c4!important] duration-300' />,
             link: 'https://www.facebook.com/reyzonchhetri/'
         },
         {
-            icon: < FaInstagram size={30} style={{ color: 'white' }} />,
+            icon: < FaInstagram size={30} style={{ color: 'white' }} className='hover:text-[#9e3030!important] duration-300' />,
             link: 'https://www.instagram.com/reyzon_chhetri/'
 
         },
         {
-            icon: <FaSnapchat size={30} style={{ color: 'white' }} />,
+            icon: <FaSnapchat size={30} style={{ color: 'white' }} className='hover:text-[#fff347!important] duration-300' />,
             link: ''
 
         },
         {
-            icon: <FaTwitter size={30} style={{ color: 'white' }} />,
+            icon: <FaTwitter size={30} style={{ color: 'white' }} className='duration-300 hover:text-[#2fa1ff!important]' />,
             link: 'https://twitter.com/ChhetriReyzon'
         }
 
@@ -35,7 +35,7 @@ const ContactIcons = () => {
                 <div className='flex gap-12 md:gap-6 overflow-hidden'>
 
                     {contactIconsInfo.map(each => <a data-aos='fade-right' href={each.link} key={Math.random()} target="_blank"
-                        rel="noreferrer" className='hover:'>{each.icon}</a>)}
+                        rel="noreferrer">{each.icon}</a>)}
 
                 </div>
 
