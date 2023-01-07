@@ -13,24 +13,25 @@ const Navbar = () => {
 
 
 
-    const links = ['home', 'about', 'portfolio', 'experience', 'contact'];
+    const links = [{ name: 'home', time: 300 }, { name: 'about', time: 700 }, { name: 'portfolio', time: 700 },
+    { name: 'experience', time: 700 }, { name: 'contact', time: 700 }];
 
 
     const linksRow = links.map((link, index) => <li data-aos="fade-down" className='px-6 cursor-pointer capitalize font-medium text-white
-    hover:scale-95 duration-200 hover:bg-[#242323] flex items-center text-lg lg:text-[1.3rem]'
-        key={index}><Link duration={2000} smooth={true} to={link} className="opacity-80 hover:opacity-100 py-4 ">{link}</Link></li>);
+    hover:scale-95 duration-200 hover:bg-[#242323] flex items-center text-lg lg:text-[1.3rem]'  key={index}>
+        <Link duration={link.time} smooth={true} to={link.name} spy={true} offset={-70} className="opacity-80 hover:opacity-100 py-4 ">{link.name}</Link></li>);
 
 
     const linksCol = links.map((link, index) => <li className='px-4 py-6 text-3xl cursor-pointer capitalize font-bold text-[#f9ceadda]
-   font-josefin-sans duration-200  hover:animate-pulse hover:scale-150 hover:text-white' data-aos="zoom-in"
-        key={index}><Link duration={2000} onClick={toggleNavHandler} smooth={true} to={link}>{link}</Link></li>);
+   font-josefin-sans duration-200  hover:animate-pulse hover:scale-150 hover:text-white' data-aos="zoom-in" key={index}>
+        <Link duration={link.time} onClick={toggleNavHandler} smooth={true} spy={true} offset={-70} to={link.name}>{link.name}</Link></li>);
 
 
 
     useEffect(() => {
         console.log('Particles Loaded');
         setTimeout(() => {
-            toggleParticles()
+            // toggleParticles()
 
         }, 3000);
     }, [])
@@ -38,7 +39,7 @@ const Navbar = () => {
 
     return (
 
-        <nav id='nav' className='flex justify-between items-center w-full h-24 text-white bg-black border-b-[1px] border-gray-600 md:border-gray-900 px-4 z-50'>
+        <nav id='nav' className='flex  justify-between items-center w-full h-24 text-white bg-black border-b-[1px] border-gray-600 md:border-gray-900 px-4 z-50'>
 
             <div className='flex px-3'>
                 <span data-aos="fade-right" data-aos-duration='1200' onClick={() => toggleParticles()}><Avatar /></span>

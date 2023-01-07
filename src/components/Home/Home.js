@@ -50,7 +50,7 @@ const Home = (props) => {
 
             </article>
 
-            <Link className='hidden md:flex fixed z-50 bottom-3 right-5 duration-300  animate-bounce hover:animate-none opacity-70 hover:opacity-100 cursor-pointer' to='nav' smooth={true}>
+            <Link className='hidden md:flex fixed z-50 bottom-3 right-5 duration-300  animate-bounce hover:animate-none opacity-70 hover:opacity-100 cursor-pointer' to='nav' smooth={true} spy={true} offset={-70} duration={100}>
                 <BsArrowUpCircle size={60} style={{ borderRadius: '50%', backgroundColor: 'rgb(28,69,175)' }} />
             </Link>
         </main >

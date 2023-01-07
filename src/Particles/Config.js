@@ -331,7 +331,7 @@ const Config = {
                 factor: 1200
             },
             limit: 0,
-            value: 130
+            value: 70
         },
         opacity: {
             random: {
