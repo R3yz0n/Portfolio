@@ -1,10 +1,8 @@
 import MyProfilePic from '../../assets/reyzon.jpg';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import SocialMenu from './SocialMenu';
-import ParticlesAnimation from '../../Particles/ParticlesAnimation';
 import { BsArrowUpCircle } from 'react-icons/bs';
 
-import { Context } from '../../Store/ContextProvider';
 import { Link } from 'react-scroll';
 import SocialLinks from '../SocialLinks/SocialLinks';
 
@@ -13,13 +11,11 @@ const Home = (props) => {
     Currently , I love to work on web application using technologies like
     React, Tailwind, Figma, JS and Git.`
 
-    const { toLoadParticles } = Context()
 
     return (
 
         <main name='home' className='min-h-[90vh] w-full bg-gradient-to-b from-black  to-gray-800 text-white pt-12 md:relative overflow-hidden'>
 
-            {toLoadParticles && <div name='Particle-JS'><ParticlesAnimation /></div>}
 
             <article className='max-w-[1100px]   mx-auto flex flex-col-reverse md:flex-row h-full items-center'>
 

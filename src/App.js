@@ -8,7 +8,6 @@ import About from "./components/About/About";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Experience from "./components/Experience/Experience";
 import Contact from "./components/Contact/Contact";
-import ContextProvider from "./Store/ContextProvider";
 import Footer from "./components/Footer";
 
 function App() {
@@ -25,10 +24,8 @@ function App() {
   return (
     <>
 
-      <ContextProvider>
-        <Navbar />
-        <Home />
-      </ContextProvider>
+      <Navbar />
+      <Home />
       <SocialLinks />
       <About />
       <Portfolio />
