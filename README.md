@@ -1,2 +1,2 @@
-Link to the website :-https://reyzonportfolio.netlify.app/
+Link to the website :-https://reyzon.netlify.app/
 -->checkout all the branches
