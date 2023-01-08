@@ -9,6 +9,8 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import Experience from "./components/Experience/Experience";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer";
+import { Route, Routes } from "react-router-dom";
+import Mails from "./mails/Mails";
 
 function App() {
   // backend
@@ -25,14 +27,21 @@ function App() {
   return (
     <>
 
-      <Navbar />
-      <Home />
-      <SocialLinks />
-      <About />
-      <Portfolio />
-      <Experience />
-      <Contact />
-      <Footer />
+      <Routes>
+        <Route path='/' element={<>
+          <Navbar />
+          <Home />
+          <SocialLinks />
+          <About />
+          <Portfolio />
+          <Experience />
+          <Contact />
+          <Footer />
+        </>} />
+
+        <Route path='/mails' element={<Mails />} />
+
+      </Routes>
 
 
     </>

@@ -17,6 +17,10 @@ html::-webkit-scrollbar {
     transition: 0.4s !important;
 }
 
+.text-wrap {
+    word-wrap: break-word;
+}
+
 @layer base {
 
     .font-josefin-sans {

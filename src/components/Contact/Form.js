@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import emailjs from 'emailjs-com'
 import Spinner from './Spinner';
+import axios from 'axios';
 
 const Form = () => {
 
@@ -17,7 +18,7 @@ const Form = () => {
     }
 
 
-    const submitHandler = (e) => {
+    const submitHandler = async (e) => {
         e.preventDefault()
         setError(false)
         // console.log(formValues);
@@ -34,6 +35,15 @@ const Form = () => {
             }, (error) => {
                 console.log(error.text);
             });
+
+        try {
+            const data = await axios.post('https://portfolio-backend-dd4b5-default-rtdb.firebaseio.com/mails.json',
+                formValues)
+            console.log(data);
+        }
+        catch (err) {
+            console.log(err.message);
+        }
 
         setLoading({ spinner: true, tick: false })
 
