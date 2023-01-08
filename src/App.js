@@ -11,6 +11,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer";
 
 function App() {
+  // backend
 
   useEffect(() => {
     AOS.init({ duration: 1000, easing: "ease", once: 'true' });
