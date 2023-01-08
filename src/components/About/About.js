@@ -25,8 +25,8 @@ const About = () => {
 
                 <section className='w-full mx-auto pb-4 sm:pb-0 md:w-2/3 font-josefin-sans flex flex-col gap-3 sm:shadow-lg md:border-[3px] border-[rgb(39,48,61)] md:border-l-0 overflow-hidden'>
 
-                    <p className='text-3xl text-center underline py-4' data-aos='fade-down' data-aos-duration="1600">Brief about me</p>
-                    <p className='font-josefin-sans sm:px-6 text-sm md:text-md lg:text-lg pb-6' data-aos='fade-down' >{desc}</p>
+                    <p className='text-3xl text-center underline py-4' data-aos='fade-down' data-aos-delay={700}>Brief about me</p>
+                    <p className='font-josefin-sans sm:px-6 text-sm md:text-md lg:text-lg pb-6' data-aos='fade-down' data-aos-delay={500}>{desc}</p>
 
                 </section>
 

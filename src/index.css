@@ -13,6 +13,10 @@ html::-webkit-scrollbar {
     display: none;
 }
 
+.hov-dur:hover {
+    transition: 0.4s !important;
+}
+
 @layer base {
 
     .font-josefin-sans {

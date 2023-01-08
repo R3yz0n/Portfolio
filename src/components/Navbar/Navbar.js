@@ -11,12 +11,12 @@ const Navbar = () => {
 
 
 
-    const links = [{ name: 'home', time: 300 }, { name: 'about', time: 500 }, { name: 'portfolio', time: 500 },
-    { name: 'experience', time: 500 }, { name: 'contact', time: 500 }];
+    const links = [{ name: 'home', time: 300, delay: 100 }, { name: 'about', time: 500, delay: 200 }, { name: 'portfolio', time: 500, delay: 300 },
+    { name: 'experience', time: 500, delay: 400 }, { name: 'contact', time: 500, delay: 500 }];
 
 
     const linksRow = links.map((link, index) => <li data-aos="fade-down" className='px-6 cursor-pointer capitalize font-medium text-white
-    hover:scale-95 duration-200 hover:bg-[#242323] flex items-center text-lg lg:text-[1.3rem]'  key={index}>
+    hover:scale-95 duration-200 hover:bg-[#242323] flex items-center text-lg lg:text-[1.3rem]'  key={index} data-aos-delay={link.delay}>
         <Link duration={link.time} smooth={true} to={link.name} spy={true} offset={-70} className="opacity-80 hover:opacity-100 py-4 ">{link.name}</Link></li>);
 
 

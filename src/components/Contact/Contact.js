@@ -16,7 +16,7 @@ const Contact = () => {
                 <main className='flex max-w-[800px] mx-auto py-6 md:py-3 md:min-h-[80%] gap-10 border-gray-900 shadow-md shadow-gray-800 border-t-2 rounded-md mt-6 '>
 
                     <div className=' hidden md:flex m-auto w-[40%] '>
-                        <img src={FormImg} alt="ERR" className='w-80' data-aos='zoom-in-right' />
+                        <img src={FormImg} alt="ERR" className='w-80' data-aos='zoom-in-right' data-aos-delay={300} />
                     </div>
 
                     <Form />
