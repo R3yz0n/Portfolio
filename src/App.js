@@ -13,6 +13,11 @@ import Footer from "./components/Footer";
 
 function App() {
 
+  // it contais particles and preloader;
+
+
+
+
   useEffect(() => {
     AOS.init({ duration: 1000, easing: "ease", once: 'true' });
 
