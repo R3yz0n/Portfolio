@@ -13,7 +13,7 @@ import Footer from "./components/Footer";
 
 function App() {
 
-  // it contais particles and preloader;
+  // it contais particles and preloader;f
 
 
 

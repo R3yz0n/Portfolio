@@ -13,6 +13,10 @@ html::-webkit-scrollbar {
     display: none;
 }
 
+.b{
+    border: 1px solid red !important;
+}
+
 @layer base {
 
     .font-josefin-sans {
