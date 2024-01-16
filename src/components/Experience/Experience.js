@@ -7,7 +7,7 @@ const Experience = () => {
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <ExperienceTextSection />
 
-        <main className="w-full grid grid-cols-2 sm:grid-cols-3 text-center py-8 px-6 md:px-8  gap-8 ">
+        <main className="w-full grid grid-cols-2 sm:grid-cols-3 text-center py-8 px-6 md:px-8  gap-x-8 gap-y-14 ">
           {techs.map(({ id, src, title, style, aos }) => (
             <section
               key={id}

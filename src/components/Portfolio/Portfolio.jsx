@@ -21,7 +21,7 @@ const Portfolio = () => {
         }));
 
         setProjects([...projectsData]);
-        console.log(projectsData);
+        // console.log(projectsData);
       } catch (error) {
         console.error(error);
       }
@@ -55,7 +55,7 @@ const Portfolio = () => {
                   </Link>
                 </h3>
                 <div
-                  className="text-opacity-60 t text-xs sm:text-[13px] leading-5 text-white overflow-y-auto px-3 text-justify  "
+                  className="text-opacity-60 t text-xs sm:text-[13px] leading-5 text-white overflow-y-auto px-3 md:px-0 text-justify  "
                   data-aos="fade"
                   data-aos-duration="500"
                 >

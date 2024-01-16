@@ -8,9 +8,64 @@ import SocialLinks from "../SocialLinks/SocialLinks";
 import ParticlesAnimation from "../../particles/ParticlesAnimation";
 
 const Home = (props) => {
-  const myDescription = `I have 2 years of experience building and designing UI/UX Application.
-    Currently , I love to work on web application using technologies like
-    React, Tailwind, Figma, JS and Git.`;
+  let myDescription = `I have 2 years of experience building and designing UI/UX Application . Currently I love to work on web application using technologies like
+    React Tailwind Figma JS and Git.`;
+
+  // myDescription = myDescription.split(" ");
+
+  myDescription = [
+    "I",
+    "have",
+    "2",
+    "years",
+    "of",
+    "experience",
+    "building",
+    "and",
+    "designing",
+    "UI/UX",
+    "Application",
+    "Currently",
+    "I",
+    "love",
+    "to",
+    "work",
+    "on",
+    "web",
+    "application",
+    "using",
+    "technologies",
+    "like",
+    "React",
+    "Tailwind",
+    "Figma",
+    "JS",
+    "and",
+    "Git",
+  ];
+
+  var delay = 0;
+  myDescription = myDescription.map((text) => {
+    // console.log(text);
+    delay += 50;
+    const obj = {
+      text: text,
+      delay: delay,
+    };
+    return obj;
+  });
+  const desc = myDescription.map((desc, i) => (
+    <span key={i} data-aos="fade" data-aos-delay={desc.delay}>
+      {`${desc.text}`}{" "}
+    </span>
+  ));
+  const links = [
+    { name: "home", time: 300, delay: 100 },
+    { name: "about", time: 500, delay: 200 },
+    { name: "portfolio", time: 500, delay: 300 },
+    { name: "experience", time: 500, delay: 400 },
+    { name: "contact", time: 500, delay: 500 },
+  ];
 
   return (
     <main className="min-h-[90vh] w-full bg-gradient-to-b from-black  to-gray-800 text-white pt-12 md:relative overflow-hidden">
@@ -25,9 +80,7 @@ const Home = (props) => {
             I<span className="animate-pulse">'</span>m a Front-end Developer
           </h1>
 
-          <p className="text-gray-500 py-4 max-w-lg sm:text-xl text-[1.17rem]" data-aos="zoom-out">
-            {myDescription}
-          </p>
+          <p className="text-gray-500 py-4 max-w-lg sm:text-xl text-[1.17rem]">{desc}</p>
 
           <div data-aos="fade" data-aos-duration="1300">
             <Link
