@@ -28,9 +28,9 @@ const Portfolio = () => {
     fetchNotices();
   }, []);
   return (
-    <div className="bg-gradient-to-t from-[rgb(27,33,41)] to-gray-800 w-full text-white min-h-screen pb-4 py-16">
+    <div className="bg-gradient-to-t from-[rgb(27,33,41)] to-gray-800 w-full text-white min-h-screen pb-4 py-16 flex">
       <div
-        className="max-w-[1080px] 2xl: p-4 mx-auto flex flex-col justify-center w-full h-full overflow-hidden"
+        className="sm:w-[85%] 2xl: p-4 mx-auto flex flex-col justify-center  h-full overflow-hidden"
         id="portfolio"
       >
         <PortfolioTextSection />
@@ -39,7 +39,7 @@ const Portfolio = () => {
           {projects?.map((project, i) => (
             <div
               key={project?.id}
-              className={` shadow-md flex flex-col md:flex-row  md:gap-6 gap-0 xl:gap-20    sm:w-auto  overflow-hidden   md:h-64 bg-gray-800 ${
+              className={` shadow-md flex flex-col md:flex-row  md:gap-6 gap-0 lg:gap-14   sm:w-auto  overflow-hidden   lg:h-72 bg-gray-800 ${
                 i % 2 === 0 ? "md:flex-row-reverse md:pr-5" : "md:pl-5"
               }`}
             >
@@ -55,6 +55,7 @@ const Portfolio = () => {
                     <BsArrowRight className="font-bold text-lg group-hover:translate-x-1 duration-300 transition-all" />
                   </Link>
                 </h3>
+                <hr className="mb-3 w-[96%] md:w-full mx-auto" />
                 <div
                   className="text-opacity-60 t text-xs sm:text-[13px] leading-5 text-white overflow-y-auto px-3 md:px-0 text-justify  "
                   data-aos="fade"
@@ -69,7 +70,7 @@ const Portfolio = () => {
                 data-aos-duration="500"
                 onClick={() => navigateToImage(project?.image)}
                 alt="ERR"
-                className="duration-300 cursor-pointer hover:brightness-75 mix-blend-normal object-cover h-auto max-h-64 aspect-video w-full md:w-1/2"
+                className="duration-300 cursor-pointer hover:brightness-75 mix-blend-normal object-cover h-auto max-h-64 lg:max-h-72 aspect-video w-full md:w-1/2"
               />
             </div>
           ))}
