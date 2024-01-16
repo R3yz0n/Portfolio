@@ -1,13 +1,11 @@
 import { BsArrowRight } from "react-icons/bs";
-import portfolios from "./PortfoliosData";
 import PortfolioTextSection from "./PortfolioTextSection";
 import { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../firebase";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 const Portfolio = () => {
   const [projects, setProjects] = useState([]);
-  const navigate = useNavigate();
   const navigateToImage = (image) => {
     window.open(image, "_blank");
   };
@@ -31,7 +29,10 @@ const Portfolio = () => {
   }, []);
   return (
     <div className="bg-gradient-to-t from-[rgb(27,33,41)] to-gray-800 w-full text-white min-h-screen pb-4 py-16">
-      <div className="max-w-[1080px] 2xl: p-4 mx-auto flex flex-col justify-center w-full h-full overflow-hidden">
+      <div
+        className="max-w-[1080px] 2xl: p-4 mx-auto flex flex-col justify-center w-full h-full overflow-hidden"
+        id="portfolio"
+      >
         <PortfolioTextSection />
 
         <div className="grid   md:grid-cols-1 gap-12  md:gap-6 lg:gap-10  sm:px-0 ">

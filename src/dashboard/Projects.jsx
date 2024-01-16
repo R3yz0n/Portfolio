@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { db, storage } from "../firebase";
-import axios from "axios";
 import { addDoc, collection } from "firebase/firestore";
 const Projects = () => {
   // State variables for form data
@@ -54,7 +53,7 @@ const Projects = () => {
             // });
             console.log("here");
             const dataToSend = { ...formData, image: downloadURL };
-            const res = await addDoc(collection(db, "projects"), dataToSend);
+            await addDoc(collection(db, "projects"), dataToSend);
             alert("Sucessfull Uploaded");
 
             // console.log(res);

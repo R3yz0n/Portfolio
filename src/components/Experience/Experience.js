@@ -3,11 +3,11 @@ import ExperienceTextSection from "./ExperienceTextSection";
 
 const Experience = () => {
   return (
-    <div className="bg-gradient-to-b from-[rgb(27,33,41)] to-black w-full min:h-screen pt-8 overflow-hidden pt-16">
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+    <div className="bg-gradient-to-b from-[rgb(27,33,41)] to-black w-full min:h-screen  overflow-hidden pt-16">
+      <div className="max-w-screen-lg mx-auto p-4  xl:px-0 flex flex-col justify-center w-full h-full text-white">
         <ExperienceTextSection />
 
-        <main className="w-full grid grid-cols-2 sm:grid-cols-3 text-center py-8 px-6 md:px-8  gap-x-8 gap-y-14 ">
+        <main className="w-full lg:w-[1000px] grid grid-cols-2 sm:grid-cols-3 text-center py-8 px-6 lg:px-0  gap-x-8 lg:gap-x-16 gap-y-14 ">
           {techs.map(({ id, src, title, style, aos }) => (
             <section
               key={id}

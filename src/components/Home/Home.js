@@ -59,17 +59,9 @@ const Home = (props) => {
       {`${desc.text}`}{" "}
     </span>
   ));
-  const links = [
-    { name: "home", time: 300, delay: 100 },
-    { name: "about", time: 500, delay: 200 },
-    { name: "portfolio", time: 500, delay: 300 },
-    { name: "experience", time: 500, delay: 400 },
-    { name: "contact", time: 500, delay: 500 },
-  ];
 
   return (
     <main className="min-h-[90vh] w-full bg-gradient-to-b from-black  to-gray-800 text-white pt-12 md:relative overflow-hidden">
-      <ParticlesAnimation />
       <article className="max-w-[1100px]   mx-auto flex flex-col-reverse md:flex-row h-full items-center">
         <section className="flex flex-col justify-center  md:w-[70%] py-12  px-6 overflow-hidden">
           <h1
@@ -82,9 +74,9 @@ const Home = (props) => {
 
           <p className="text-gray-500 py-4 max-w-lg sm:text-xl text-[1.17rem]">{desc}</p>
 
-          <div data-aos="fade" data-aos-duration="1300">
+          <div data-aos="fade" className="z-50 inline-block" data-aos-duration="1300">
             <Link
-              className="group w-fit px-6 py-2 my-2 flex items-center rounded-md bg-gradient-to-r hover:shadow-purple-700
+              className="group z-50    w-fit px-6 py-2 my-2 flex items-center rounded-md bg-gradient-to-r hover:shadow-purple-700
                          hover:shadow-sm from-cyan-500 to-blue-500 cursor-pointer font-bold tracking-[3px] md:text-xl"
               to="portfolio"
               smooth={true}
@@ -127,6 +119,7 @@ const Home = (props) => {
           style={{ borderRadius: "50%", backgroundColor: "rgb(28,69,175)" }}
         />
       </Link>
+      <ParticlesAnimation />
     </main>
   );
 };

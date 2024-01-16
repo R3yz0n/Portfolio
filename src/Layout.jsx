@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar/Navbar";
-import React, { useEffect } from "react";
+import React from "react";
 import Home from "./components/Home/Home";
 import SocialLinks from "./components/SocialLinks/SocialLinks";
 import About from "./components/About/About";

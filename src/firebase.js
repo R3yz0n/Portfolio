@@ -13,7 +13,6 @@ const firebaseConfig = {
 
 // Initialize Firebasef
 const app = initializeApp(firebaseConfig);
-const textDB = getStorage(app);
 
 export const db = getFirestore(app);
 
