@@ -1,23 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {},
     fontFamily: {
       signature: ["Great Vibes"],
-      sans: ['josefin sans'],
+      sans: ["josefin sans"],
       screens: {
-        'sm': '540px',
+        sm: "540px",
 
-        'md': '768px',
+        md: "768px",
 
-        'lg': '1024px',
+        lg: "1024px",
 
-        'xl': '1280px',
+        xl: "1280px",
 
-        '2xl': '1536px',
-      }
-    }
+        "2xl": "1536px",
+      },
+    },
   },
   plugins: [],
-}
+};

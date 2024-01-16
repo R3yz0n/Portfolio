@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 
-
+*{
+    box-sizing: border-box;
+}
 html {
     overflow-x: hidden;
 
@@ -29,3 +31,18 @@ html::-webkit-scrollbar {
 
     }
 }
+.b{
+    border: 1px solid red;
+}
+
+.t{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.line-6{
+    overflow: hidden;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 6;
+}
+
