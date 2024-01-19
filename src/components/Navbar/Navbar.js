@@ -17,11 +17,11 @@ const Navbar = () => {
 
   const linksRow = links.map((link, index) => (
     <li
-      data-aos="fade"
+      // data-aos="fade"
       className="px-6 cursor-pointer capitalize font-medium text-white
     hover:scale-95 duration-200 hover:bg-[#242323] flex items-center text-lg lg:text-[1.3rem]"
       key={index}
-      data-aos-delay={link.delay}
+      // data-aos-delay={link.delay}
     >
       <Link
         duration={link.time}
@@ -75,7 +75,7 @@ const Navbar = () => {
       <div
         className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden "
         onClick={toggleNavHandler}
-        data-aos="zoom-in-down"
+        data-aos="fade"
         data-aos-duration="1000"
       >
         {!nav && <FaBars size={30} />}

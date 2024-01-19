@@ -6,12 +6,14 @@ import { BsArrowUpCircle } from "react-icons/bs";
 import { Link } from "react-scroll";
 import SocialLinks from "../SocialLinks/SocialLinks";
 import ParticlesAnimation from "../../particles/ParticlesAnimation";
+import { useEffect, useState } from "react";
 
 const Home = (props) => {
   let myDescription = `I have 2 years of experience building and designing UI/UX Application . Currently I love to work on web application using technologies like
     React Tailwind Figma JS and Git.`;
 
   // myDescription = myDescription.split(" ");
+  const [startAnimation, setStartAnimation] = useState(false);
 
   myDescription = [
     "I",
@@ -59,6 +61,12 @@ const Home = (props) => {
       {`${desc.text}`}{" "}
     </span>
   ));
+
+  useEffect(() => {
+    setTimeout(() => {
+      setStartAnimation(true);
+    }, 2500);
+  }, []);
 
   return (
     <main className="min-h-[90vh] w-full bg-gradient-to-b from-black  to-gray-800 text-white pt-12 md:relative overflow-hidden">
@@ -119,7 +127,7 @@ const Home = (props) => {
           style={{ borderRadius: "50%", backgroundColor: "rgb(28,69,175)" }}
         />
       </Link>
-      <ParticlesAnimation />
+      {startAnimation && <ParticlesAnimation />}
     </main>
   );
 };

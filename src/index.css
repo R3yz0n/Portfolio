@@ -46,3 +46,9 @@ display: -webkit-box;
 -webkit-line-clamp: 6;
 }
 
+.b{
+    border: 1px solid red;
+}
+.font-sans{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
