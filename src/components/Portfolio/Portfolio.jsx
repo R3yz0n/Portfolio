@@ -8,6 +8,7 @@ import reactImage from "../../assets/react.png";
 import reduxImage from "../../assets/redux.png";
 import firebaseImage from "../../assets/firebase.png";
 import nodejsImage from "../../assets/node-js.png";
+import tailwindImage from "../../assets/tailwind.png";
 
 const Portfolio = () => {
   const [projects, setProjects] = useState([]);
@@ -41,6 +42,8 @@ const Portfolio = () => {
         return firebaseImage;
       case "nodejs":
         return nodejsImage;
+      case "tailwind":
+        return tailwindImage;
       default:
         return null; // Handle unknown technologies or return a default image
     }
