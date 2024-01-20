@@ -84,7 +84,7 @@ const Portfolio = () => {
                 >
                   {project?.description}
                 </div>
-                <div className="self-start pt-4 sm:pt-0 px-2 sm:px-0 flex sm:hidden lg:flex lg:absolute bottom-5 gap-6 opacity-80 overflow-hidden">
+                <div className="self-start pt-4 sm:pt-0 px-2 sm:px-0 flex sm:hidden lg:flex lg:absolute bottom-5 gap-6 opacity-100 overflow-hidden">
                   {project?.techs?.map((tech, index) => (
                     <aside
                       key={tech}
@@ -97,7 +97,7 @@ const Portfolio = () => {
                         alt={tech}
                         className=" h-7 w-6 md:h-8 md:w-8"
                       />
-                      <span className="font-sans text-[11px] md:text-xs font-thin tracking-wide capitalize">
+                      <span className="font-sans text-[11px] md:text-xs font-thin tracking-wide text-opacity-80 capitalize">
                         {tech}
                       </span>
                     </aside>
