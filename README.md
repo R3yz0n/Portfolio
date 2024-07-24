@@ -2,22 +2,7 @@
 
 This full-stack web application is developed using React for the front end, Express.js for the back end, MySQL for the database, and Sequelize as the ORM. The application includes both an admin panel and a customer section.
 
-## Table of Contents
 
-<div style="border: 2px solid #eee; background-color: #000;">
-
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Database Setup](#database-setup)
-- [Running the Application](#running-the-application)
-- [Project Structure](#project-structure)
-- [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
-- [License](#license)
-
-</div>
 
 ## Features
 
@@ -43,16 +28,7 @@ This full-stack web application is developed using React for the front end, Expr
 
 ## Prerequisites
 
-- Node.js (version X.X.X)
+- Node.js (version 18.2.3)
 - npm or yarn
-- MySQL (version X.X.X)
 
-## Installation
 
-### Backend Setup
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/yourusername/yourproject.git
-   cd yourproject
