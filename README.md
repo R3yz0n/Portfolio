@@ -1,8 +1,10 @@
 # Food Ordering Web Application
 
-This is a full-stack web application for grocery delivery, developed using React for the front end, Express.js for the back end, MySQL for the database, and Sequelize as the ORM. The application includes both an admin panel and a customer section.
+This full-stack web application is developed using React for the front end, Express.js for the back end, MySQL for the database, and Sequelize as the ORM. The application includes both an admin panel and a customer section.
 
 ## Table of Contents
+
+<div style="border: 2px solid #000; background-color: #f0f0f0; padding: 10px;">
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
@@ -15,6 +17,8 @@ This is a full-stack web application for grocery delivery, developed using React
 - [Contributing](#contributing)
 - [License](#license)
 
+</div>
+
 ## Features
 
 - User authentication and authorization
@@ -23,4 +27,32 @@ This is a full-stack web application for grocery delivery, developed using React
 - Responsive design for mobile and desktop
 - Statistics and Report summary for admins
 
-##
+## Technologies Used
+
+- **Frontend:**
+  - React
+  - Redux (if used)
+  - Axios or fetch (for API requests)
+  - CSS/SCSS or styled-components (for styling)
+
+- **Backend:**
+  - Express
+  - MySQL
+  - Sequelize
+  - JWT (for authentication)
+
+## Prerequisites
+
+- Node.js (version X.X.X)
+- npm or yarn
+- MySQL (version X.X.X)
+
+## Installation
+
+### Backend Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/yourproject.git
+   cd yourproject
