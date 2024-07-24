@@ -4,7 +4,7 @@ This full-stack web application is developed using React for the front end, Expr
 
 ## Table of Contents
 
-<div style="border: 2px solid #000; background-color: #f0f0f0; padding: 10px;">
+<div style="border: 2px solid #eee; background-color: #000;">
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
