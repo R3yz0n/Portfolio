@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "./dashboard/Dashboard";
 import Layout from "./Layout";
+import { HelmetProvider } from "react-helmet-async";
 
 function App() {
   useEffect(() => {
@@ -12,13 +13,17 @@ function App() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
+  console.log("hi reyzon!");
+
   return (
-    <main>
-      <Routes>
-        <Route path="/" element={<Layout />} />
-        <Route path="/dashboard/*" element={<Dashboard />} />
-      </Routes>
-    </main>
+    <HelmetProvider>
+      <main>
+        <Routes>
+          <Route path="/" element={<Layout />} />
+          <Route path="/dashboard/*" element={<Dashboard />} />
+        </Routes>
+      </main>
+    </HelmetProvider>
   );
 }
 
