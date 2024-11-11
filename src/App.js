@@ -17,12 +17,19 @@ function App() {
 
   return (
     <HelmetProvider>
-      <main>
+      {/* <main>
         <Routes>
           <Route path="/" element={<Layout />} />
           <Route path="/dashboard/*" element={<Dashboard />} />
         </Routes>
-      </main>
+      </main> */}
+      <iframe
+        className="border border-red-500"
+        width="100%"
+        height="650px"
+        frameBorder="0"
+        src="https://varosatech.speedtestcustom.com"
+      ></iframe>
     </HelmetProvider>
   );
 }
