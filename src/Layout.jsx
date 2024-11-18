@@ -14,7 +14,7 @@ const Layout = () => {
     <>
       {/* Helmet for SEO */}
       <Helmet>
-        <title>My SEO Friendly React Portfolio</title>
+        <title>Sagar Thapa Chhetri</title>
         <meta
           name="description"
           content="This is a portfolio website built using React, showcasing projects, experience, and contact information."
