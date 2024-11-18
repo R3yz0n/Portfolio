@@ -89,7 +89,7 @@ const Home = (props) => {
               to="portfolio"
               smooth={true}
             >
-              Portfolio
+              Projects
               <span className="group-hover:rotate-90 duration-500">
                 <MdOutlineKeyboardArrowRight size={35} />
               </span>

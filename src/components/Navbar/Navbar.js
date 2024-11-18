@@ -10,7 +10,7 @@ const Navbar = () => {
   const links = [
     { name: "home", time: 300, delay: 100 },
     { name: "about", time: 500, delay: 200 },
-    { name: "portfolio", time: 500, delay: 300 },
+    { name: "projects", time: 500, delay: 300 },
     { name: "experience", time: 500, delay: 400 },
     { name: "contact", time: 500, delay: 500 },
   ];
