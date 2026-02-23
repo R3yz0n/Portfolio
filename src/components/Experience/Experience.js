@@ -3,7 +3,7 @@ import ExperienceTextSection from "./ExperienceTextSection";
 
 const Experience = () => {
   return (
-    <div className="bg-gradient-to-b from-[rgb(27,33,41)] to-black w-full min:h-screen  overflow-hidden pt-16 flex">
+    <div className="bg-gradient-to-b from-[rgb(27,33,41)] to-black w-full min:h-screen  overflow-hidden pt-10 flex">
       <div className="sm:w-[85%] p-4  xl:px-0 flex flex-col justify-center w-full h-full text-white mx-auto">
         <ExperienceTextSection />
 

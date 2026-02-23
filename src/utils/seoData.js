@@ -79,20 +79,7 @@ export const seoData = {
       "https://github.com/reyzonchhetri",
       "https://twitter.com/reyzonchhetri",
     ],
-    knowsAbout: [
-      "MERN Stack",
-      "React",
-      "JavaScript",
-      "Node.js",
-      "MongoDB",
-      "Express.js",
-      "Web3 Frontend",
-      "Firebase",
-      "Tailwind CSS",
-      "UI/UX Design",
-      "Web Development",
-      "Frontend Development",
-    ],
+
     hasOccupation: {
       "@type": "Occupation",
       name: "MERN Stack Developer",
@@ -118,14 +105,7 @@ export const pagesSEO = {
       "Sagar Thapa Chhetri, Sagar Thapa, Sagar, Sagar Chhetri, Reyzon, Rejan, R3yz0n, Rezan, Nepathya College, MERN Stack, Frontend Developer, Web3 Frontend, Sagar Footballer, Footballer, Portfolio, React Developer, Web Developer Nepal",
     path: "/",
   },
-  about: {
-    title: "About Sagar Thapa Chhetri (Reyzon) | MERN Stack Developer from Nepathya College",
-    description:
-      "Learn about Sagar Thapa Chhetri (Reyzon/Rejan) - Nepathya College graduate, MERN Stack Developer, Web3 Frontend specialist, and football enthusiast. Discover my journey in web development.",
-    keywords:
-      "About Sagar Thapa Chhetri, Sagar, Reyzon, Nepathya College, MERN Stack Developer, Web3 Frontend, Footballer, Developer Experience, Skills, Background",
-    path: "/#about",
-  },
+
   portfolio: {
     title: "Projects by Sagar Thapa Chhetri | MERN Stack & Web3 Frontend Portfolio",
     description:
@@ -149,11 +129,5 @@ export const pagesSEO = {
     keywords:
       "Contact Sagar Thapa, Hire Reyzon, MERN Stack Developer, Web3 Frontend, Nepathya College, Freelance Developer Nepal, Web Development Services",
     path: "/#contact",
-  },
-  dashboard: {
-    title: "Dashboard - Sagar Thapa Chhetri | Project Management",
-    description: "Admin dashboard for managing portfolio projects and content.",
-    keywords: "Dashboard, Admin, Project Management",
-    path: "/dashboard",
   },
 };

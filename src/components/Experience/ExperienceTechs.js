@@ -1,32 +1,33 @@
-import html from "../../assets/html.png";
-import css from "../../assets/css.png";
-import javascript from "../../assets/javascript.png";
-import reactImage from "../../assets/react.png";
+import serverless from "../../assets/aws-serverless.png";
 import github from "../../assets/github.png";
+import next from "../../assets/next.webp";
+import nodejs from "../../assets/node-js.png";
+import reactImage from "../../assets/react.png";
+import sql from "../../assets/sql.png";
 import tailwind from "../../assets/tailwind.png";
-import bootstrap from "../../assets/bootstrap.png";
-import redux from "../../assets/redux.svg";
+import typescript from "../../assets/typescript.png";
 
 const techs = [
   {
     id: 1,
-    src: html,
-    title: "HTML",
+    src: next,
+    title: "Next.js",
     style: "shadow-orange-500",
     aos: "fade-down-right",
   },
+
   {
     id: 2,
-    src: css,
-    title: "CSS",
-    style: "shadow-blue-500",
+    src: typescript,
+    title: "Typescript",
+    style: "shadow-yellow-500",
     aos: "fade-down",
   },
   {
     id: 3,
-    src: javascript,
-    title: "JavaScript",
-    style: "shadow-yellow-500",
+    src: serverless,
+    title: "AWS Serverless",
+    style: "shadow-blue-500",
     aos: "fade-down-left",
   },
   {
@@ -38,8 +39,8 @@ const techs = [
   },
   {
     id: 6,
-    src: bootstrap,
-    title: "Bootstrap",
+    src: nodejs,
+    title: "Node.js",
     style: "shadow-purple-500",
     aos: "zoom-in",
   },
@@ -52,15 +53,15 @@ const techs = [
   },
   {
     id: 7,
-    src: redux,
-    title: "Redux",
+    src: sql,
+    title: "SQL",
     style: "shadow-purple-500",
     aos: "fade-down-right",
   },
   {
     id: 8,
     src: github,
-    title: "Gitub",
+    title: "Git",
     style: "shadow-gray-400",
     aos: "zoom-in",
   },

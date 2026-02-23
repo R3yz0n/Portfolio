@@ -1,7 +1,7 @@
 import React from "react";
 
 const Footer = () => {
-  const text = ["R", "E", "Y", "Z", "O", "N", "©", "2", "0", "2", "4"];
+  const text = ["R", "E", "Y", "Z", "O", "N", "©", "2", "0", "2", "6"];
 
   return (
     <div className="bg-[rgb(17,24,39)] text-white pt-10 pb- w-full flex align-baseline flex-row-reverse ">

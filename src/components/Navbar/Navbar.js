@@ -1,6 +1,5 @@
-import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
-import Avatar from "./Avatar";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -9,10 +8,9 @@ const Navbar = () => {
 
   const links = [
     { name: "home", time: 300, delay: 100 },
-    { name: "about", time: 500, delay: 200 },
-    { name: "projects", time: 500, delay: 300 },
-    { name: "experience", time: 500, delay: 400 },
-    { name: "contact", time: 500, delay: 500 },
+    { name: "projects", time: 500, delay: 200 },
+    { name: "experience", time: 500, delay: 300 },
+    { name: "contact", time: 500, delay: 400 },
   ];
 
   const linksRow = links.map((link, index) => (
@@ -61,14 +59,7 @@ const Navbar = () => {
       id="nav"
       className="flex  justify-between items-center w-full h-24 text-white bg-black border-b-[1px] border-gray-600 md:border-gray-900 px-4 z-50"
     >
-      <div className="flex px-3">
-        <span data-aos="fade" data-aos-duration="1200">
-          <Avatar />
-        </span>
-        <h2 className="pl-4 text-xl pt-2 text-[#f4d731]" data-aos="zoom-in" data-aos-duration="900">
-          ELEVEN • Net
-        </h2>
-      </div>
+      <div className="flex px-3"></div>
 
       <ul className="hidden md:flex text-xl h-full px-4 overflow-hidden">{linksRow} </ul>
 
