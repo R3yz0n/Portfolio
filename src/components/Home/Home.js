@@ -23,7 +23,7 @@ Responsive, performant, accessible UIs.`;
 
   return (
     <main className="min-h-[80vh] w-full bg-gradient-to-b from-black  to-gray-800 text-white pt-12 md:relative overflow-hidden">
-      <article className="max-w-[1100px]   mx-auto flex flex-col-reverse md:flex-row h-full items-center">
+      <article className="max-w-[1100px] 2xl:max-w-[1300px] mx-auto flex flex-col-reverse md:flex-row h-full items-center">
         <section className="flex flex-col justify-center  md:w-[70%] py-12  px-6 overflow-hidden">
           <h1
             className="text-3xl sm:text-4xl lg:text-7xl font-bold text-white"
@@ -51,7 +51,7 @@ Responsive, performant, accessible UIs.`;
         </section>
 
         <section
-          className="md:pt-10 max-w-[320px] lg:max-w-[400px] max-h-[900px] px-10  md:mt-10 ml-[20%] md:ml-0 z-30"
+          className="md:pt-10 max-w-[320px] lg:max-w-[420px] max-h-[900px] px-10  md:mt-10 ml-[20%] md:ml-0 z-30"
           id="home"
         >
           <img

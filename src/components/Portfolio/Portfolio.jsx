@@ -135,10 +135,10 @@ const Portfolio = () => {
           </div>
           {visibleCount < projects.length && (
             <div className="flex justify-center mt-8">
-              <div data-aos="fade" className="z-50 inline-block" data-aos-duration="1300">
+              <div data-aos="fade" className="z-40 inline-block" data-aos-duration="1300">
                 <button
                   onClick={() => setVisibleCount(projects.length)}
-                  className="group z-50 w-fit px-4 py-1  mt-3  flex items-center rounded-md bg-gradient-to-r hover:shadow-purple-700 hover:shadow-sm from-cyan-500 to-blue-500 cursor-pointer font-bold tracking-[2px] "
+                  className="group z-40 w-fit px-4 py-1  mt-3  flex items-center rounded-md bg-gradient-to-r hover:shadow-purple-700 hover:shadow-sm from-cyan-500 to-blue-500 cursor-pointer font-bold tracking-[2px] "
                   to="portfolio"
                   smooth={true}
                 >
@@ -152,10 +152,10 @@ const Portfolio = () => {
           )}
           {visibleCount >= projects.length && projects.length > INITIAL_PROJECTS_COUNT && (
             <div className="flex justify-center mt-8">
-              <div data-aos="fade" className="z-50 inline-block" data-aos-duration="1300">
+              <div data-aos="fade" className="z-40 inline-block" data-aos-duration="1300">
                 <button
                   onClick={() => setVisibleCount(INITIAL_PROJECTS_COUNT)}
-                  className="group z-50 w-fit px-4 py-1  flex items-center rounded-md bg-gradient-to-r hover:shadow-purple-700 hover:shadow-sm from-blue-500 to-cyan-500 cursor-pointer font-bold tracking-[2px] "
+                  className="group z-40 w-fit px-4 py-1  flex items-center rounded-md bg-gradient-to-r hover:shadow-purple-700 hover:shadow-sm from-blue-500 to-cyan-500 cursor-pointer font-bold tracking-[2px] "
                   to="portfolio"
                   smooth={true}
                 >
