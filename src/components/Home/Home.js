@@ -1,4 +1,4 @@
-import MyProfilePic from "../../assets/reyzon.jpg";
+import MyProfilePic from "../../assets/reyzon.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import SocialMenu from "./SocialMenu";
 import { BsArrowUpCircle } from "react-icons/bs";
@@ -9,59 +9,12 @@ import ParticlesAnimation from "../../particles/ParticlesAnimation";
 import { useEffect, useState } from "react";
 
 const Home = (props) => {
-  let myDescription = `I have 2 years of experience building and designing UI/UX Application . Currently I love to work on web application using technologies like
-    React Tailwind Figma JS and Git.`;
-
   // myDescription = myDescription.split(" ");
   const [startAnimation, setStartAnimation] = useState(false);
 
-  myDescription = [
-    "I",
-    "have",
-    "2",
-    "years",
-    "of",
-    "experience",
-    "building",
-    "and",
-    "designing",
-    "UI/UX",
-    "Application",
-    "Currently",
-    "I",
-    "love",
-    "to",
-    "work",
-    "on",
-    "web",
-    "application",
-    "using",
-    "technologies",
-    "like",
-    "React",
-    "Tailwind",
-    "Figma",
-    "JS",
-    "and",
-    "Git",
-  ];
-
-  var delay = 0;
-  myDescription = myDescription.map((text) => {
-    // console.log(text);
-    delay += 50;
-    const obj = {
-      text: text,
-      delay: delay,
-    };
-    return obj;
-  });
-  const desc = myDescription.map((desc, i) => (
-    <span key={i} data-aos="fade" data-aos-delay={desc.delay}>
-      {`${desc.text}`}{" "}
-    </span>
-  ));
-
+  const desc = `I'm Full-stack developer with knowledge of modern frontend (React, Next.js, TypeScript),
+TDD, AWS serverless lamda, and backend (Node.js, Express) technologies. I have experience in building
+Responsive, performant, accessible UIs.`;
   useEffect(() => {
     setTimeout(() => {
       setStartAnimation(true);
@@ -69,7 +22,7 @@ const Home = (props) => {
   }, []);
 
   return (
-    <main className="min-h-[90vh] w-full bg-gradient-to-b from-black  to-gray-800 text-white pt-12 md:relative overflow-hidden">
+    <main className="min-h-[80vh] w-full bg-gradient-to-b from-black  to-gray-800 text-white pt-12 md:relative overflow-hidden">
       <article className="max-w-[1100px]   mx-auto flex flex-col-reverse md:flex-row h-full items-center">
         <section className="flex flex-col justify-center  md:w-[70%] py-12  px-6 overflow-hidden">
           <h1
@@ -77,7 +30,7 @@ const Home = (props) => {
             data-aos="fade"
             data-aos-delay={200}
           >
-            I<span className="animate-pulse">'</span>m a Front-end Developer
+            I<span className="animate-pulse">'</span>m a FullStack Developer
           </h1>
 
           <p className="text-gray-500 py-4 max-w-lg sm:text-xl text-[1.17rem]">{desc}</p>

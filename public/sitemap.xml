@@ -11,14 +11,7 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- About Section -->
-  <url>
-    <loc>https://www.sagarthapachhetri.com.np/#about</loc>
-    <lastmod>2025-06-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+
   
   <!-- Portfolio Section -->
   <url>
