@@ -64,7 +64,7 @@ const Portfolio = () => {
                 ))}
               </div>
             )}
-            <p className="mb-2 text-xs sm:text-sm text-justify text-gray-200 whitespace-pre-line">
+            <p className="mb-2 text-xs sm:text-sm pt-3  text-justify text-gray-400 whitespace-pre-line">
               {modalProject.description}
             </p>
           </div>
@@ -94,8 +94,8 @@ const Portfolio = () => {
                     </div>
                   </h3>
                   <hr className="mb-3 w-[96%] md:w-full mx-auto" />
-                  <div className="text-opacity-60 overflow-hidden scrol  sm:text-sm leading-5 text-white overflow-y-auto px-3 md:px-0 text-justify  max-h-32">
-                    <div className="text-opacity-60 overflow-hidden scrol whitespace-pre-line  line-clamp-6 lg:line-clamp-6  text-xs sm:text-sm leading-5 text-white overflow-y-auto px-1 md:px-0 text-justify max-h-32 hide-scrollbar">
+                  <div className="text-opacity-60 overflow-hidden scrol  sm:text-sm  text-white overflow-y-auto px-3 md:px-0 text-justify  max-h-32">
+                    <div className="text-opacity-60 overflow-hidden scrol whitespace-pre-line  line-clamp-6 lg:line-clamp-6  text-xs sm:text-sm   text-white overflow-y-auto px-1 md:px-0 text-justify max-h-32 hide-scrollbar">
                       {project?.description}
                     </div>
                   </div>
