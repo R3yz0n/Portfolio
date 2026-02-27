@@ -1,4 +1,4 @@
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const experiences = [
   {
@@ -85,14 +85,14 @@ export const WorkExperience = () => {
                   {exp.period}
                   <Link
                     className="ml-8 text-blue-400 underline -mt-1"
-                    href={exp.siteLinkL}
+                    to={exp.siteLinkL}
                     target="_blank"
                   >
                     Site
                   </Link>
                   <Link
                     className="ml-2 text-blue-400 underline -mt-1"
-                    href={exp.linkedIn}
+                    to={exp.linkedIn}
                     target="_blank"
                   >
                     LinkedIn
