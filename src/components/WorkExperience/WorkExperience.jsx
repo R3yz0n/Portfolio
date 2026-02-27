@@ -105,7 +105,7 @@ export const WorkExperience = () => {
                   {exp.tech.map((tech, i) => (
                     <span
                       key={i}
-                      className="bg-[#00e6e6]/10 text-[#00e6e6] px-2 py-1 rounded text-xs font-medium"
+                      className="bg-[#00e6e6]/10 text-[#00e6e6] px-1 md:px-2 py-0.5 md:py-1 rounded text-xs font-medium"
                     >
                       {tech}
                     </span>
