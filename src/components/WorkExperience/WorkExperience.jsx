@@ -24,11 +24,15 @@ const experiences = [
     tech: ["React", "Tailwind CSS", "Nodejs", "Mysql"],
     siteLinkL: "https://nepsky.tech/",
     linkedIn: "https://www.linkedin.com/company/nepsky-technology-pvt-ltd/",
+    info: "Involved in building managment system College MS and News Portal and as a Web3 frontend freelancer, building dApp interfaces and integrating smart contracts using modern Web3 libraries.",
   },
+
   {
     company: "Beyond Labs",
     role: "FullStack Developer",
     period: "March 2024 ---- Jan 2025",
+    info: "Involved in building MVP for BeyondAI, a DeFi Copilot that replaces smart contract using prompt engineering and LLMs, and building serverless microservices using AWS Lambda.",
+
     description: `🔹 Frontend Development
 • Developed frontend using Next.js and Next APIs.
 • Used AI agent with to convert figma design into modern frontend components.
@@ -61,9 +65,11 @@ const experiences = [
 
 export const WorkExperience = () => {
   return (
-    <div className="bg-gradient-to-b from-[rgb(27,33,41)] to- to-gray-900 w-full min-h-screen overflow-hidden pt-10 flex flex-col items-center">
+    <div className="bg-gradient-to-b pb-20 from-[rgb(27,33,41)]  to-[rgb(27,33,41)] w-full min-h-screen overflow-hidden pt-10 flex flex-col items-center">
       <div className="sm:w-full  p-1 md:px-4 xl:w-[85%]  xl:px-0 flex flex-col justify-center w-full h-full text-white mx-auto">
-        <h2 className="text-3xl px-3 md:px-1 font-bold text-white mb-8">Work Experience</h2>
+        <h2 id="experience" className="text-3xl px-3 md:px-1 font-bold text-white mb-8">
+          Work Experience
+        </h2>
         <div className="w-full  space-y-8">
           {experiences.map((exp, idx) => (
             <div
@@ -72,7 +78,9 @@ export const WorkExperience = () => {
             >
               <div>
                 <h3 className="text-xl font-semibold mb-3 text-[#00e6e6]">{exp.role}</h3>
+
                 <p className="text-lg text-white">{exp.company}</p>
+                <p className="text-gray-300 text-sm text-justify">{exp.info}</p>
                 <p className="text-sm  text-gray-400 mb-2 flex items-center gap-2">
                   {exp.period}
                   <Link
