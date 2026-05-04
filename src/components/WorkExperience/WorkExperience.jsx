@@ -4,7 +4,7 @@ const experiences = [
   {
     company: "Nepsky Technology Prev.(Bootwal R&D)",
     role: "FullStack Developer",
-    period: "Feb 2023 ---- Jan 2024",
+    period: "Nov 2023 ---- Jan 2025",
     description: `🔹 Frontend Development
 
 • Built responsive and scalable UI using React.js and Tailwind CSS following modern best practices.
@@ -30,7 +30,7 @@ const experiences = [
   {
     company: "Beyond Labs",
     role: "FullStack Developer",
-    period: "Nov 2023 ---- Jan 2025",
+    period: "Mar 2025 ---- Jan 2026",
     info: "Involved in building MVP for BeyondAI, a DeFi Copilot that replaces smart contract using prompt engineering and LLMs, and building serverless microservices using AWS Lambda.",
 
     description: `🔹 Frontend Development
