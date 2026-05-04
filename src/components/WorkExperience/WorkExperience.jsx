@@ -30,7 +30,7 @@ const experiences = [
   {
     company: "Beyond Labs",
     role: "FullStack Developer",
-    period: "March 2024 ---- Jan 2025",
+    period: "Nov 2023 ---- Jan 2025",
     info: "Involved in building MVP for BeyondAI, a DeFi Copilot that replaces smart contract using prompt engineering and LLMs, and building serverless microservices using AWS Lambda.",
 
     description: `🔹 Frontend Development
