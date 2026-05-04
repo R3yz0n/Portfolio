@@ -34,6 +34,7 @@ const experiences = [
     info: "Involved in building MVP for BeyondAI, a DeFi Copilot that replaces smart contract using prompt engineering and LLMs, and building serverless microservices using AWS Lambda.",
 
     description: `🔹 Frontend Development
+    
 • Developed frontend using Next.js and Next APIs.
 • Used AI agent with to convert figma design into modern frontend components.
 • Worked within a unified monorepo containing BeyondAI Docs, shared APIs, and frontend applications.
@@ -41,6 +42,7 @@ const experiences = [
 
 
 🔹 Serverless & Microservices
+
 • Built serverless microservices using AWS Lambda.
 • Followed TDD workflow across authentication, wallet, and Telegram services.
 • Wrote Test Cases for all services and integrated with CI/CD pipelines.
